@@ -1,0 +1,6 @@
+#Ignores everything but c files :D
+*
+
+!.gitignore
+!*.c
+!*/
