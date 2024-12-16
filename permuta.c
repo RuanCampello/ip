@@ -3,11 +3,12 @@
 int main(void) {
     int a, b;
 
-    printf("Entre o valor de A: ");
+    printf("Digite o valor de a: ");
     scanf("%d", &a);
-
-    printf("Entre o valor de B: ");
+    printf("Digite o valor de b: ");
     scanf("%d", &b);
+
+    printf("\nOs valores lidos para a e b foram: %d e %d\n", a, b);
 
     // isso usa "ou exclusivo" (XOR) em operações binárias, mas pode ser perigoso.
     // a = a ^ b;
@@ -18,7 +19,7 @@ int main(void) {
     b = a - b;
     a = a - b;
 
-    printf("A = %d, b = %d", a, b);
+    printf("\nOs novos valores de a e b sao: %d e %d\n", a, b);
 
     return 0;
 }
