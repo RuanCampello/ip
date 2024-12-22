@@ -21,7 +21,7 @@ struct Roots calc_roots(const float *a, const float *b, const float *c) {
     if (delta >= 0) {
         x1 = (-(*b) + sqrtf(delta)) / (2 * (*a));
         // esse if é "desnecessário", mas com ele, o valor de x2 só será computado caso realmente exista.
-        // caso não houvesse esse if, o resultado seria o mesmo, porém teria uma computação inútil já que x1 = x2.
+        // caso não houvesse esse if, o resultado seria o mesmo, porém haveria uma computação inútil já que x1 = x2.
         if (delta > 0) {
             x2 = (-(*b) - sqrtf(delta)) / (2 * (*a));
         }
