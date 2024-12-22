@@ -42,7 +42,7 @@ int main(void) {
 
     if (sex != 'M' && sex != 'F') {
         printf("Você entrou um valor inválido para sexo %c.\n", sex);
-        printf("O sexo deve ser M para masculino ou F para feminino.");
+        printf("O sexo deve ser M para masculino ou F para feminino.\n");
 
         return 1;
     }
@@ -51,7 +51,7 @@ int main(void) {
     scanf("%f", &height);
 
     const float ideal_weight = calc_ideal_weight(&sex, &height);
-    printf("O peso ideal para %c com %.2f metros de altura é: %.1fkg", sex, height, ideal_weight);
+    printf("O peso ideal para %c com %.2f metros de altura é: %.1fkg.\n", sex, height, ideal_weight);
 
     return 0;
 }

@@ -31,8 +31,8 @@ struct Roots calc_roots(const float *a, const float *b, const float *c) {
     return roots;
 }
 
-// pra retirar essa repetição de print -> scanf
-// já que é bem padronizada.
+// pra retirar essa repetição de print -> scanf, já que é bem padronizada.
+// sim, eu amo funções :D.
 void prompt_and_assign(float *value_to_be_assigned, const char letter_of_value) {
     printf("Entre o coeficiente para %c: ", letter_of_value);
     scanf("%f", value_to_be_assigned);
